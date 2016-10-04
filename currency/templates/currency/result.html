@@ -1,0 +1,11 @@
+{% extends "base_currency.html" %}
+
+{% block content %}
+    <h2>This is Currency</h2>
+    <ul>
+        <li>선택한 화폐는 "{{currency.title}}" 입니다</li>
+        <li>{{currency.title}}의 오늘 환율은 {{currency.currency_final}}원 입니다</li>
+        <li>당신은 {{used_amount}} {{currency.nation}}를 사용하셨습니다</li>
+        <li>사용한 {{currency.title}}는 한국 '원'으로 {{ used_amount_to_krw }} 원입니다</li>
+    </ul>
+{% endblock content %}

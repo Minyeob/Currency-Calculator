@@ -1,0 +1,9 @@
+{% extends "base_currency.html" %}
+
+{% block content %}
+    <form action="{% url 'currency:select' %}" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Select" />
+    </form>
+{% endblock content %}
